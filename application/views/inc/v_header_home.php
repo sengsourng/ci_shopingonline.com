@@ -1,4 +1,4 @@
-<!-- header -->
+
 	<header id="header" class="clearfix">
 		<!-- navbar -->
 		<nav class="navbar navbar-default">
@@ -11,15 +11,15 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html"><img class="img-responsive" src="<?php echo base_url ();?>public/images/logo.png" alt="Logo"></a>
+					<a class="navbar-brand" href="<?php echo site_url(); ?>"><img class="img-responsive" src="<?php echo base_url ();?>public/images/logo.png" alt="Logo"></a>
 				</div>
 				<!-- /navbar-header -->
 				
 				<div class="navbar-left">
 					<div class="collapse navbar-collapse" id="navbar-collapse">
 						<ul class="nav navbar-nav">
-							<li class="active dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Home <span class="caret"></span></a>
-								<ul class="dropdown-menu">
+							<li class="active"><a href="<?php echo site_url(); ?>">Home <span class="caret"></span></a>
+								<!-- <ul class="dropdown-menu">
 									<li class="active"><a href="index.html">Home Default </a></li>
 									<li><a href="index-one.html">Home Version-1</a></li>
 									<li><a href="index-two.html">Home Version-2</a></li>
@@ -27,13 +27,13 @@
 									<li><a href="index-car.html">Home Car-1<span class="badge">New</span></a></li>
 									<li><a href="index-car-two.html">Home Car-2<span class="badge">New</span></a></li>
 									<li><a href="directory.html">Home Directory<span class="badge">Latest</span></a></li>
-								</ul>
+								</ul> -->
 							</li>
-							<li><a href="categories.html">Category</a></li>
+							<li><a href="<?php echo site_url(); ?>categories">Category</a></li>
 							<li><a href="details.html">all ads</a></li>
 							<li><a href="faq.html">Help/Support</a></li> 
 							<li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
-								<ul class="dropdown-menu">
+								<!-- <ul class="dropdown-menu">
 									<li><a href="about-us.html">ABout Us</a></li>
 									<li><a href="contact-us.html">Contact Us</a></li>
 									<li><a href="ad-post.html">Ad post</a></li>
@@ -54,7 +54,7 @@
 									<li><a href="pricing.html">Pricing<span class="badge">New</span></a></li>
 									<li><a href="500-page.html">500 Opsss<span class="badge">New</span></a></li>
 									<li><a href="404-page.html">404 Error<span class="badge">New</span></a></li>
-								</ul>
+								</ul> -->
 							</li>
 						</ul>
 					</div>
@@ -87,4 +87,4 @@
 			</div><!-- container -->
 		</nav><!-- navbar -->
 	</header>
-	<!-- header -->
+	<!-- header
