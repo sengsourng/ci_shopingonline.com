@@ -8,7 +8,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html"><img class="img-responsive" src="<?php echo base_url(); ?>public/images/logo.png" alt="Logo"></a>
+					<a class="navbar-brand" href="<?php echo site_url(); ?>"><img class="img-responsive" src="<?php echo base_url(); ?>public/images/logo.png" alt="Logo"></a>
 				</div>
 				<!-- /navbar-header -->
 				

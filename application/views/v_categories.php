@@ -1,5 +1,3 @@
-
-
 	<!-- main -->
 	<section id="main" class="clearfix category-page">
 		<div class="container">

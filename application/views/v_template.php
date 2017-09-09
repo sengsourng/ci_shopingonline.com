@@ -18,7 +18,6 @@
 
 <!--head-->
 
-
 <!--main-->
 <?php 
 	if(isset($page)){
@@ -48,11 +47,7 @@
 	}
 ?>
 
-
-
-
 <!--download-->
-
 <?php 
 	if(isset($footer)){
 
