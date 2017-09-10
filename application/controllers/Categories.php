@@ -11,6 +11,7 @@ class Categories extends CI_Controller {
 		$data['header']="inc/v_header_home";
 		$data['footer']="inc/v_footer_home";
 		$data['something_sell']="inc/v_something_sell_categories";
+		$data['banner_form']="inc/v_banner_form";
 		
 		
 
