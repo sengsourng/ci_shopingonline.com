@@ -30,7 +30,7 @@
 								</ul> -->
 							</li>
 							<li><a href="<?php echo site_url(); ?>categories">Category</a></li>
-							<li><a href="details.html">all ads</a></li>
+							<li><a href="<?php echo site_url(); ?>details">all ads</a></li>
 							<li><a href="faq.html">Help/Support</a></li> 
 							<li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
 								<!-- <ul class="dropdown-menu">
