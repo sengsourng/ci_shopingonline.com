@@ -53,18 +53,16 @@
 								</div>							
 							</div><!-- featured-top -->	
 
-
-
-
-
-
-
-							<!-- ad-item -->
+							<?php 
+							foreach ($products as $pro) {
+								if($pro['pro_status']=='N'){
+								?>
+								<!-- ad-item -->
 							<div class="ad-item row">
 								<!-- item-image -->
 								<div class="item-image-box col-sm-4">
 									<div class="item-image">
-										<a href="details.html"><img src="<?php echo base_url();?>public/images/listing/1.jpg" alt="Image" class="img-responsive"></a>
+										<a href="details.html"><img src="<?php echo base_url();?>public/images/listing/<?php echo $pro['featured_image']; ?>" alt="Image" class="img-responsive"></a>
 									</div><!-- item-image -->
 								</div>
 								
@@ -72,11 +70,11 @@
 								<div class="item-info col-sm-8">
 									<!-- ad-info -->
 									<div class="ad-info">
-										<h3 class="item-price">$800.00</h3>
-										<h4 class="item-title"><a href="#">Apple TV - Everything you need to know!</a></h4>
+										<h3 class="item-price">$<?php echo $pro['pro_sell_price']; ?></h3>
+										<h4 class="item-title"><a href="<?php echo site_url(); ?>products/detail/<?php echo $pro['product_id']; ?>"><?php echo $pro['pro_name']; ?></a></h4>
 										<div class="item-cat">
-											<span><a href="#">Electronics & Gedgets</a></span> /
-											<span><a href="#">Tv & Video</a></span>
+											<span><a href="#"><?php echo $pro['cat_id']; ?></a></span> /
+											<span><a href="#"><?php echo $pro['pro_brand']; ?></a></span>
 										</div>										
 									</div><!-- ad-info -->
 									
@@ -84,7 +82,7 @@
 									<div class="ad-meta">
 										<div class="meta-content">
 											<span class="dated"><a href="#">7 Jan, 16  10:10 pm </a></span>
-											<a href="#" class="tag"><i class="fa fa-tags"></i> New</a>
+											<a href="#" class="tag"><i class="fa fa-tags"></i> <?php echo $pro['pro_condition']; ?></a>
 										</div>										
 										<!-- item-info-right -->
 										<div class="user-option pull-right">
@@ -95,12 +93,17 @@
 								</div><!-- item-info -->
 							</div><!-- ad-item -->
 
+								<?php
+								}
+								else{
+									?>							
+
 							<!-- ad-item -->
 							<div class="ad-item row">
 								<div class="item-image-box col-sm-4">
 									<!-- item-image -->
 									<div class="item-image">
-										<a href="details.html"><img src="<?php echo base_url();?>public/images/listing/2.jpg" alt="Image" class="img-responsive"></a>
+										<a href="details.html"><img src="<?php echo base_url();?>public/images/listing/<?php echo $pro['featured_image']; ?>" alt="Image" class="img-responsive"></a>
 										<span class="featured-ad">Featured</span>
 										<a href="#" class="verified" data-toggle="tooltip" data-placement="left" title="Verified"><i class="fa fa-check-square-o"></i></a>
 									</div><!-- item-image -->
@@ -110,11 +113,11 @@
 								<div class="item-info col-sm-8">
 									<!-- ad-info -->
 									<div class="ad-info">
-										<h3 class="item-price">$25.00 <span>(Negotiable)</span></h3>
-										<h4 class="item-title"><a href="#">Smartphone Original Cover</a></h4>
+										<h3 class="item-price">$<?php echo $pro['pro_sell_price']; ?> <span>(Negotiable)</span></h3>
+										<h4 class="item-title"><a href="<?php echo site_url(); ?>products/detail/<?php echo $pro['product_id']; ?>"><?php echo $pro['pro_name']; ?></a></h4>
 										<div class="item-cat">
-											<span><a href="#">Home Appliances</a></span> /
-											<span><a href="#">Sofa</a></span>
+											<span><a href="#"><?php echo $pro['cat_id']; ?></a></span> /
+											<span><a href="#"><?php echo $pro['pro_brand']; ?></a></span>
 										</div>										
 									</div><!-- ad-info -->
 									
@@ -122,7 +125,7 @@
 									<div class="ad-meta">
 										<div class="meta-content">
 											<span class="dated"><a href="#">7 Jan, 16  10:10 pm </a></span>
-											<a href="#" class="tag"><i class="fa fa-tags"></i> Used</a>
+											<a href="#" class="tag"><i class="fa fa-tags"></i> <?php echo $pro['pro_condition']; ?></a>
 										</div>									
 										<!-- item-info-right -->
 										<div class="user-option pull-right">
@@ -133,6 +136,22 @@
 								</div><!-- item-info -->
 							</div>
 							<!-- ad-item -->
+									<?php
+								}
+							}
+
+
+							?>
+
+
+
+
+
+
+
+
+
+							
 
 
 

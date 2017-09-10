@@ -14,35 +14,13 @@
 						
 			<div class="section banner">				
 				<!-- banner-form -->
-				<div class="banner-form banner-form-full">
-					<form action="#">
-						<!-- category-change -->
-						<div class="dropdown category-dropdown">						
-							<a data-toggle="dropdown" href="#"><span class="change-text">Select Category</span> <i class="fa fa-angle-down"></i></a>
-							<ul class="dropdown-menu category-change">
-								<li><a href="#">Fashion & Beauty</a></li>
-								<li><a href="#">Cars & Vehicles</a></li>
-								<li><a href="#">Electronics & Gedgets</a></li>
-								<li><a href="#">Real Estate</a></li>
-								<li><a href="#">Sports & Games</a></li>
-							</ul>								
-						</div><!-- category-change -->
+				<?php 
+				if(isset($banner_form)){
+					$this->load->view($banner_form);
+				}
 
-						<!-- language-dropdown -->
-						<div class="dropdown category-dropdown language-dropdown ">						
-							<a data-toggle="dropdown" href="#"><span class="change-text">United Kingdom</span> <i class="fa fa-angle-down"></i></a>
-							<ul class="dropdown-menu  language-change">
-								<li><a href="#">United Kingdom</a></li>
-								<li><a href="#">United States</a></li>
-								<li><a href="#">China</a></li>
-								<li><a href="#">Russia</a></li>
-							</ul>								
-						</div><!-- language-dropdown -->
-					
-						<input type="text" class="form-control" placeholder="Type Your key word">
-						<button type="submit" class="form-control" value="Search">Search</button>
-					</form>
-				</div><!-- banner-form -->
+				?>
+				<!-- banner-form -->
 			</div><!-- banner -->
 	
 
@@ -126,11 +104,11 @@
 					<!-- slider-text -->
 					<div class="col-md-5">
 						<div class="slider-text">
-							<h2>$950.00</h2>
-							<h3 class="title">Apple iPhone 6 16GB</h3>
+							<h2>$<?php echo $products[0]['pro_sell_price']; ?></h2>
+							<h3 class="title"><?php echo $products[0]['pro_name']; ?></h3>
 							<p><span>Offered by: <a href="#">Yury Corporation</a></span>
-							<span> Ad ID:<a href="#" class="time"> 251716763</a></span></p>
-							<span class="icon"><i class="fa fa-clock-o"></i><a href="#">7 Jan, 16  10:10 pm</a></span>
+							<span> Ad ID:<a href="#" class="time"> <?php echo $products[0]['ads_id']; ?></a></span></p>
+							<span class="icon"><i class="fa fa-clock-o"></i><a href="#"><?php echo $products[0]['post_date']; ?></a></span>
 							<span class="icon"><i class="fa fa-map-marker"></i><a href="#">Los Angeles, USA</a></span>
 							<span class="icon"><i class="fa fa-suitcase online"></i><a href="#">Dealer <strong>(online)</strong></a></span>
 							
@@ -177,8 +155,7 @@
 					<div class="col-md-8">
 						<div class="description">
 							<h4>Description</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est </p><br>
-							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni?</p>
+							<?php echo $products[0]['pro_description']; ?>
 						</div>
 					</div><!-- description -->
 

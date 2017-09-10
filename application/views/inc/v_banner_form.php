@@ -1,16 +1,21 @@
 				<div class="banner-form banner-form-full">
-					<form action="#">
+					<form action="<?php echo site_url(); ?>Categories/listsearch" method="POST">
 						<!-- category-change -->
-						<div class="dropdown category-dropdown">						
-							<a data-toggle="dropdown" href="#"><span class="change-text">Select Category</span> <i class="fa fa-angle-down"></i></a>
-							<ul class="dropdown-menu category-change">
-								<li><a href="#">Fashion & Beauty</a></li>
-								<li><a href="#">Cars & Vehicles</a></li>
-								<li><a href="#">Electronics & Gedgets</a></li>
-								<li><a href="#">Real Estate</a></li>
-								<li><a href="#">Sports & Games</a></li>
-							</ul>								
-						</div><!-- category-change -->
+						<!-- <div class="dropdown category-dropdown"> -->
+						<select class="dropdown category-dropdown" name="txtcategory">
+						  <?php 
+						  foreach ($category as $cat) {
+						  	?>
+						  	<option value="<?php echo $cat['cat_id']; ?>"><?php echo $cat['cat_name']; ?></option>
+						  	<?php
+						  }
+
+						  ?>
+						  
+						</select>
+
+						<!-- </div> -->
+						<!-- category-change -->
 
 						<!-- language-dropdown -->
 						<div class="dropdown category-dropdown language-dropdown ">						

@@ -15,8 +15,16 @@
 										<!-- panel-body -->
 										<div class="panel-body">
 											<ul>
-												<li><a href="categories.html"><i class="icofont icofont-laptop-alt"></i>Electronics & Gedget<span>(1029)</span></a></li>
-												<li><a href="#"><i class="icofont icofont-police-car-alt-2"></i>Cars & Vehicles<span>(1228)</span></a></li>
+											<?php 
+											foreach ($category as $cat) {
+												echo '												<li><a href="'.site_url().'categories/findCategory/'. $cat['cat_id'] .'"><i class="'. $cat['cat_ico_class'].'"></i>'. $cat['cat_name'].'<span>(1029)</span></a>
+												</li>';
+											}
+
+
+											?>
+
+												<!-- <li><a href="#"><i class="icofont icofont-police-car-alt-2"></i>Cars & Vehicles<span>(1228)</span></a></li>
 												<li><a href="#"><i class="icofont icofont-building-alt"></i>Property<span>(178)</span></a></li>
 												<li><a href="#"><i class="icofont icofont-ui-home"></i>Home & Garden<span>(7163)</span></a></li>
 												<li><a href="#"><i class="icofont icofont-animal-dog"></i>Pets & Animals<span>(8709)</span></a></li>
@@ -27,7 +35,7 @@
 												<li><a href="#"><i class="icofont icofont-gift"></i>Gift & Presentation<span>(3223)</span></a></li>
 												<li><a href="#"><i class="icofont icofont-architecture-alt"></i>Office Product<span>(3283)</span></a></li>
 												<li><a href="#"><i class="icofont icofont-animal-cat-alt-1"></i>Arts, Crafts & Sewing<span>(3221)</span></a></li>
-												<li><a href="#"><i class="icofont icofont-abc"></i>Others<span>(3129)</span></a></li>
+												<li><a href="#"><i class="icofont icofont-abc"></i>Others<span>(3129)</span></a></li> -->
 											</ul>
 										</div><!-- panel-body -->
 									</div>
