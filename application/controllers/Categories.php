@@ -12,7 +12,7 @@ class Categories extends CI_Controller {
 		$data['footer']="inc/v_footer_home";
 		$data['something_sell']="inc/v_something_sell_categories";
 		$data['banner_form']="inc/v_banner_form";
-		$data['menu_left_categories']="inc/v_menu_left_catrgories";
+		$data['menu_left_categories']="inc/v_menu_left_categories";
 		
 
 
