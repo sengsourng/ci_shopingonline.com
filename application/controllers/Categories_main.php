@@ -11,7 +11,7 @@ class Categories_main extends CI_Controller {
 		$data['header']="inc/v_header_home";
 		$data['footer']="inc/v_footer_home";
 		$data['something_sell']="inc/v_something_sell_categories";
-
+		$data['menu_left']="inc/v_menu_left_categories";
 		
 		$data['page']="v_categories_main";
 
