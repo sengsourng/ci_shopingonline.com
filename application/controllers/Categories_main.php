@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Categories extends CI_Controller {
+class Categories_main extends CI_Controller {
 
 	public function index()
 	{
@@ -12,10 +12,6 @@ class Categories extends CI_Controller {
 		$data['footer']="inc/v_footer_home";
 		
 		
-		
-		
-
-
 		$data['page']="v_categories_main";
 
 		$this->load->view('v_template',$data);
