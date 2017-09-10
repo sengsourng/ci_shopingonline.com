@@ -15,8 +15,8 @@ class Home extends CI_Controller {
 		//$data['download']=NULL;
 
 		//Banner Search
-		//$data['banner_search']="inc/v_banner_search";
-		$data['banner_search']=NULL;
+		$data['banner_search']="inc/v_banner_search";
+		//$data['banner_search']=NULL;
 
 		//Product List
 		$data['product_list']="home/v_product_list";
