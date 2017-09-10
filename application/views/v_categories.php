@@ -39,7 +39,7 @@
 									<div id="accordion-one" class="panel-collapse collapse in">
 										<!-- panel-body -->
 										<div class="panel-body">
-											<h5><a href="categories-main.html"><i class="fa fa-caret-down"></i> All Categories</a></h5>
+											<h5><a href="<?php echo site_url(); ?>categories_main"><i class="fa fa-caret-down"></i> All Categories</a></h5>
 											<a href="#"><i class="icofont icofont-laptop-alt"></i>Electronics & Gedget</a>
 											<ul>
 												<li><a href="#">Laptop & Computer <span>(129)</span></a></li>
@@ -53,7 +53,6 @@
 												<li><a href="#">Other Electronics <span>(149)</span></a></li>
 												<li><a href="#">TV & Video Accessories<span> (9)</span></a></li>
 											</ul>
-
 										</div><!-- panel-body -->
 									</div>
 								</div><!-- panel -->
